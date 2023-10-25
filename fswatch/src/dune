@@ -1,8 +1,9 @@
 (library
-  (name fswatch)
-  (public_name fswatch)
-  (flags (:standard -safe-string))
-  (libraries threads)
-  (c_names stub)
-  (c_flags (:include inc_cflags))
-  (c_library_flags (:include inc_libs)))
+ (name fswatch)
+ (public_name fswatch)
+ (flags
+  (:standard -safe-string))
+ (libraries threads)
+ (foreign_stubs
+  (language c)
+  (names stub)))

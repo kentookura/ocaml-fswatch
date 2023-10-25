@@ -1,3 +1,7 @@
+_opam
+.direnv
+.envrc
+result
 **/*.annot
 
 **/.\#*
